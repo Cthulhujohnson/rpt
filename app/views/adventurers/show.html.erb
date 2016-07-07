@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @adventurer.name %>
+</p>
+
+<p>
+  <strong>Str:</strong>
+  <%= @adventurer.str %>
+</p>
+
+<p>
+  <strong>Dex:</strong>
+  <%= @adventurer.dex %>
+</p>
+
+<p>
+  <strong>Con:</strong>
+  <%= @adventurer.con %>
+</p>
+
+<p>
+  <strong>Int:</strong>
+  <%= @adventurer.int %>
+</p>
+
+<p>
+  <strong>Wis:</strong>
+  <%= @adventurer.wis %>
+</p>
+
+<p>
+  <strong>Cha:</strong>
+  <%= @adventurer.cha %>
+</p>
+
+<%= link_to 'Edit', edit_adventurer_path(@adventurer) %> |
+<%= link_to 'Back', adventurers_path %>
