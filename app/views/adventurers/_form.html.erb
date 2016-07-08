@@ -1,7 +1,7 @@
 <%= form_for(@adventurer) do |f| %>
   <% if @adventurer.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@adventurer.errors.count, "error") %> prohibited this adventurer from being saved:</h2>
+    <div  class="alert alert-danger">
+      <p><Strong><%= pluralize(@adventurer.errors.count, "error") %> prohibited this adventurer from being saved:</Strong></p>
 
       <ul>
       <% @adventurer.errors.full_messages.each do |message| %>
@@ -52,6 +52,6 @@
     <%= f.collection_select :chr_class_id, ChrClass.all, :id, :name, prompt: true %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'submit', :class => 'btn btn-default' %>
   </div>
 <% end %>
