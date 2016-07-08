@@ -37,7 +37,17 @@
 
 <p>
   <strong>Gender:</strong>
-  <%= @adventurer.gender %>
+  <%= @adventurer.gender.name if @adventurer.gender %>
+</p>
+
+<p>
+  <strong>Race:</strong>
+  <%= @adventurer.race.name if @adventurer.race %>
+</p>
+
+<p>
+  <strong>Class:</strong>
+  <%= @adventurer.chr_class.name if @adventurer.chr_class %>
 </p>
 
 <%= link_to 'Edit', edit_adventurer_path(@adventurer) %> |

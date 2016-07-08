@@ -70,6 +70,6 @@ class AdventurersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def adventurer_params
-      params.require(:adventurer).permit(:name, :str, :dex, :con, :int, :wis, :cha)
+      params.require(:adventurer).permit(:name, :str, :dex, :con, :int, :wis, :cha, :gender_id, :chr_class_id, :race_id)
     end
 end

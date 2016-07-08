@@ -41,15 +41,15 @@
   </div>
   <div class="field">
     <%= f.label :gender %><br>
-    <%= f.collection_select :gender, Gender.all, :id, :name, prompt: true %>
+    <%= f.collection_select :gender_id, Gender.all, :id, :name, prompt: true %>
   </div>
    <div class="field">
     <%= f.label :race %><br>
-    <%= f.collection_select :race, Race.all, :id, :name, prompt: true %>
+    <%= f.collection_select :race_id, Race.all, :id, :name, prompt: true %>
   </div>
    <div class="field">
     <%= f.label :chr_class %><br>
-    <%= f.collection_select :chr_class, ChrClass.all, :id, :name, prompt: true %>
+    <%= f.collection_select :chr_class_id, ChrClass.all, :id, :name, prompt: true %>
   </div>
   <div class="actions">
     <%= f.submit %>
