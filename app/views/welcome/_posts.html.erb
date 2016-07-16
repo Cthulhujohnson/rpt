@@ -1,0 +1,7 @@
+<% @news.each do |post| %>
+      
+  <h3><%= post.title %></h3>
+  <strong><%#=l post.created_at, :format => :long %><%= post.created_at.strftime ('%B %d %Y') %></strong>
+  <p><%= post.body %></p>
+        
+<% end %>
